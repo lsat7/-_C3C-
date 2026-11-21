@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C3C 个人财务分析报告</title>
+<style>
+:root { color-scheme: light; }
+body { margin: 0; padding: 32px; background: #f5f7fb; color: #1f2937;
+       font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif; }
+main { max-width: 1000px; margin: 0 auto; background: #fff; padding: 32px;
+        border-radius: 14px; box-shadow: 0 8px 28px rgba(15,23,42,.08); }
+h1 { margin: 0 0 4px; font-size: 26px; }
+h2 { margin-top: 32px; font-size: 18px; border-left: 4px solid #2563eb;
+      padding-left: 10px; }
+.sub { color: #6b7280; margin-bottom: 24px; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+th, td { border: 1px solid #e5e7eb; padding: 8px 10px; text-align: left; }
+th { background: #eff6ff; }
+.badge { display: inline-block; padding: 4px 12px; border-radius: 999px;
+          background: #dbeafe; color: #1d4ed8; font-weight: 600; }
+footer { margin-top: 36px; padding-top: 16px; border-top: 1px solid #e5e7eb;
+          color: #6b7280; font-size: 12px; }
+</style>
+</head>
+<body>
+<main>
+<h1>个人收支与投资组合分析报告</h1>
+<p class="sub">C3C 联合产出 · 生成工具 analyze.py · 领域口径 finance_metrics.py</p>
+<p>最新月份 <span class="badge">2026-11</span> 预算健康度：
+<strong>74.6 分（关注）</strong></p>
+
+<h2>一、逐月收支汇总</h2>
+<table><thead><tr><th>月份</th><th>收入</th><th>支出</th><th>净结余</th><th>结余率</th></tr></thead><tbody><tr><td>2026-09</td><td>¥18,000.00</td><td>¥6,300.00</td><td>¥11,700.00</td><td>65.00%</td></tr><tr><td>2026-10</td><td>¥18,000.00</td><td>¥7,910.00</td><td>¥10,090.00</td><td>56.06%</td></tr><tr><td>2026-11</td><td>¥20,500.00</td><td>¥11,000.00</td><td>¥9,500.00</td><td>46.34%</td></tr></tbody></table>
+
+<h2>二、全期支出结构</h2>
+<table><thead><tr><th>支出科目</th><th>金额</th><th>占比</th></tr></thead><tbody><tr><td>房租</td><td>¥10,500.00</td><td>41.65%</td></tr><tr><td>购物</td><td>¥5,900.00</td><td>23.40%</td></tr><tr><td>餐饮</td><td>¥4,850.00</td><td>19.24%</td></tr><tr><td>娱乐</td><td>¥1,420.00</td><td>5.63%</td></tr><tr><td>交通</td><td>¥1,300.00</td><td>5.16%</td></tr><tr><td>学习</td><td>¥980.00</td><td>3.89%</td></tr><tr><td>医疗</td><td>¥260.00</td><td>1.03%</td></tr></tbody></table>
+<svg viewBox="0 0 760 278" width="100%" role="img" aria-label="支出科目占比条形图"><text x="8" y="33" font-size="12" fill="#1f2937">房租</text><rect x="96" y="20" width="216.6" height="18" rx="3" fill="#2563eb"/><text x="320.6" y="33" font-size="12" fill="#374151">41.65%</text><text x="8" y="67" font-size="12" fill="#1f2937">购物</text><rect x="96" y="54" width="121.7" height="18" rx="3" fill="#0891b2"/><text x="225.7" y="67" font-size="12" fill="#374151">23.40%</text><text x="8" y="101" font-size="12" fill="#1f2937">餐饮</text><rect x="96" y="88" width="100.0" height="18" rx="3" fill="#16a34a"/><text x="204.0" y="101" font-size="12" fill="#374151">19.24%</text><text x="8" y="135" font-size="12" fill="#1f2937">娱乐</text><rect x="96" y="122" width="29.3" height="18" rx="3" fill="#d97706"/><text x="133.3" y="135" font-size="12" fill="#374151">5.63%</text><text x="8" y="169" font-size="12" fill="#1f2937">交通</text><rect x="96" y="156" width="26.8" height="18" rx="3" fill="#dc2626"/><text x="130.8" y="169" font-size="12" fill="#374151">5.16%</text><text x="8" y="203" font-size="12" fill="#1f2937">学习</text><rect x="96" y="190" width="20.2" height="18" rx="3" fill="#7c3aed"/><text x="124.2" y="203" font-size="12" fill="#374151">3.89%</text><text x="8" y="237" font-size="12" fill="#1f2937">医疗</text><rect x="96" y="224" width="5.4" height="18" rx="3" fill="#2563eb"/><text x="109.4" y="237" font-size="12" fill="#374151">1.03%</text></svg>
+
+<h2>三、最新月份支出结构（2026-11）</h2>
+<table><thead><tr><th>科目</th><th>金额</th><th>占比</th></tr></thead><tbody><tr><td>房租</td><td>¥3,500.00</td><td>31.82%</td></tr><tr><td>购物</td><td>¥3,200.00</td><td>29.09%</td></tr><tr><td>餐饮</td><td>¥2,200.00</td><td>20.00%</td></tr><tr><td>娱乐</td><td>¥900.00</td><td>8.18%</td></tr><tr><td>学习</td><td>¥680.00</td><td>6.18%</td></tr><tr><td>交通</td><td>¥520.00</td><td>4.73%</td></tr></tbody></table>
+
+<h2>四、投资组合表现</h2>
+<table><thead><tr><th>指标</th><th>数值</th><th>口径说明</th></tr></thead><tbody><tr><td>区间</td><td>2026-09-01 ~ 2026-11-18</td><td>15 个观测点</td></tr><tr><td>累计收益</td><td>9.20%</td><td>末值/初值 - 1</td></tr><tr><td>年化收益</td><td>387.54%</td><td>252 交易日年化</td></tr><tr><td>年化波动</td><td>23.36%</td><td>日收益标准差 × √252</td></tr><tr><td>夏普比率</td><td>16.504</td><td>(年化收益 - 2%) / 年化波动</td></tr><tr><td>最大回撤</td><td>4.09%</td><td>历史峰值至随后谷值最大跌幅</td></tr></tbody></table>
+<p>样本仅 15 个观测点（不足 60 个），年化收益与夏普比率为短样本外推值，只用于演示计算口径，不构成投资判断。</p>
+<svg viewBox="0 0 760 230" width="100%" role="img" aria-label="净值走势折线图"><line x1="60" y1="190" x2="700" y2="190" stroke="#9ca3af"/><line x1="60" y1="40" x2="60" y2="190" stroke="#9ca3af"/><polyline points="60.0,190.0 105.7,170.4 151.4,144.3 197.1,165.5 242.9,134.6 288.6,106.8 334.3,119.9 380.0,154.1 425.7,177.0 471.4,147.6 517.1,111.7 562.9,84.0 608.6,93.8 654.3,62.8 700.0,40.0" fill="none" stroke="#2563eb" stroke-width="2"/><circle cx="60.0" cy="190.0" r="3" fill="#2563eb"/><circle cx="105.7" cy="170.4" r="3" fill="#2563eb"/><circle cx="151.4" cy="144.3" r="3" fill="#2563eb"/><circle cx="197.1" cy="165.5" r="3" fill="#2563eb"/><circle cx="242.9" cy="134.6" r="3" fill="#2563eb"/><circle cx="288.6" cy="106.8" r="3" fill="#2563eb"/><circle cx="334.3" cy="119.9" r="3" fill="#2563eb"/><circle cx="380.0" cy="154.1" r="3" fill="#2563eb"/><circle cx="425.7" cy="177.0" r="3" fill="#2563eb"/><circle cx="471.4" cy="147.6" r="3" fill="#2563eb"/><circle cx="517.1" cy="111.7" r="3" fill="#2563eb"/><circle cx="562.9" cy="84.0" r="3" fill="#2563eb"/><circle cx="608.6" cy="93.8" r="3" fill="#2563eb"/><circle cx="654.3" cy="62.8" r="3" fill="#2563eb"/><circle cx="700.0" cy="40.0" r="3" fill="#2563eb"/><text x="8" y="46" font-size="11" fill="#6b7280">1.092</text><text x="8" y="190" font-size="11" fill="#6b7280">1.000</text><text x="60" y="215" font-size="11" fill="#6b7280">2026-09-01</text><text x="620" y="215" font-size="11" fill="#6b7280">2026-11-18</text></svg>
+
+<h2>五、预算健康度判读</h2>
+<table><thead><tr><th>月份</th><th>预算</th><th>预算控制分</th><th>结余率分</th><th>综合分</th><th>结论</th><th>建议</th></tr></thead><tbody><tr><td>2026-11</td><td>¥8,000.00</td><td>62.5</td><td>92.7</td><td>74.6</td><td>关注</td><td>压缩非必要支出，将结余率提升至 30% 以上。</td></tr></tbody></table>
+<p>压缩非必要支出，将结余率提升至 30% 以上。</p>
+
+<footer>
+数据来源：data/transactions.csv、data/nav.csv｜
+计算口径：252 交易日年化、无风险利率 2%、预算控制 60% + 结余率 40%｜样本仅 15 个观测点（不足 60 个），年化收益与夏普比率为短样本外推值，只用于演示计算口径，不构成投资判断。｜
+生成方式：python analyze.py --transactions data/transactions.csv --nav data/nav.csv --budget 8000.0 --out report.html
+</footer>
+</main>
+</body>
+</html>
